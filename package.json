@@ -1,0 +1,38 @@
+{
+  "name": "@qvvg/sidecar",
+  "description": "React Sidecar for State Owned State",
+  "version": "1.0.0",
+  "private": false,
+  "author": "james hunter <github@qv.vg>",
+  "license": "MIT",
+  "main": "dist/sidecar.cjs.js",
+  "module": "dist/sidecar.esm.js",
+  "browser": "dist/sidecar.umd.js",
+  "jest": {
+    "preset": "rollup-jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@qvvg/sos": "^2.0.0",
+    "jest": "^24.9.0",
+    "react": "^16.11.0",
+    "rollup": "^1.26.0",
+    "rollup-jest": "0.0.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-size": "^0.2.0"
+  },
+  "peerDependencies": {
+    "@qvvg/sos": "^2.0.0",
+    "react": "^16.11.0"
+  },
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "test": "jest"
+  }
+}
