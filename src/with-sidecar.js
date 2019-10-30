@@ -9,7 +9,7 @@ export function withSidecar(mods = [], opts = {}) {
       constructor(props) {
         super(props)
         this.state = {}
-        this.setProps = function setProps(props = {}) {
+        this.setProps = (props = {}) => {
           if (typeof props !== 'object')
             throw new Error(`sidecar setProps(value) -- value must be an object`)
 
