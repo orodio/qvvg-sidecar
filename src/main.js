@@ -2,6 +2,7 @@ export {
   broadcast,
   config,
   deps,
+  debug,
   handleAsk,
   handleContinue,
   handleInfo,
