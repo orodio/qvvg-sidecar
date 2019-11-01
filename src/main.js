@@ -11,6 +11,8 @@ export {
   handleTerminate,
   handleTimeout,
   label,
+  resetAll,
+  nextIdle,
 } from '@qvvg/sos'
 
 export {withSidecar} from './with-sidecar.js'
