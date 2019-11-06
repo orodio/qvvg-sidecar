@@ -22,6 +22,10 @@ export function withSidecar(mods = [], opts = {}) {
         })
       }
 
+      componentDidUpdate(prevProps) {
+        Domain.tell(this.$sidecar, 'propsUpdated', this.props, prevProps)
+      }
+
       componentDidMount() {
         this.mount = true
       }
