@@ -38,11 +38,13 @@ export function withSidecar(mods = [], opts = {}) {
       render() {
         if (this.$sidecar == null) return null
         const label = Sidecar.node.label
-        const sidecarProps = {
-          [label + 'Sidecar']: Sidecar,
-          [label + 'Self']: () => this.$sidecar,
+        const sidecars = this.props.sidecars || {}
+        sidecars[label] = {
+          domain: Sidecar,
+          self: () => this.$sidecar,
         }
-        return <Comp {...sidecarProps} {...this.props} {...this.state} />
+
+        return <Comp {...this.props} sidecars={sidecars} {...this.state} />
       }
     }
 
