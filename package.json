@@ -15,7 +15,7 @@
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "@babel/preset-react": "^7.7.4",
-    "@qvvg/sos": "^2.8.0",
+    "@qvvg/sos": "^3.0.0",
     "jest": "^24.9.0",
     "react": "^16.12.0",
     "rollup": "^1.27.5",
@@ -26,7 +26,7 @@
     "rollup-plugin-size": "^0.2.1"
   },
   "peerDependencies": {
-    "@qvvg/sos": "^2.8.0",
+    "@qvvg/sos": "^3.0.0",
     "react": "^16.11.0"
   },
   "scripts": {
